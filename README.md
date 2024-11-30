@@ -133,5 +133,5 @@ $$
 
 ### Relative diffusion coefficient and rate
 ![image](https://github.com/ZimoJupiter/Double-gyres/blob/main/Figures/Relative%20dispersion.png)
-![image](https://github.com/ZimoJupiter/Double-gyres/blob/main/Figures/Absolute%20dispersion%20rate.png)
+![image](https://github.com/ZimoJupiter/Double-gyres/blob/main/Figures/Relative%20dispersion%20rate.png)
 ![image](https://github.com/ZimoJupiter/Double-gyres/blob/main/Figures/Tr%20vs%20rate.png)
