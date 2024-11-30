@@ -60,7 +60,7 @@ def compute_Q_criterion_2D(u, v, x, y, t):
 
     plt.figure()
     plt.contourf(x, y, Q, levels=np.arange(-2,2+0.1,0.1), cmap='jet')
-    plt.colorbar(label='Q Criterion')
+    plt.colorbar(label=r'Q Criterion [$s^{-2}$]')
     plt.xlabel('x')
     plt.ylabel('y')
     plt.tight_layout()
