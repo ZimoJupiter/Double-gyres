@@ -1,3 +1,10 @@
+"""
+@ A program for modeling double gyres
+@ author ZimoJupiter
+@ w.zimo@outlook.com
+@ date 30 Nov 2024
+@ license MIT License
+"""
 import numpy as np
 import pandas as pd
 from numpy import pi, exp, sqrt, sin, cos
@@ -127,7 +134,6 @@ def Trajectories():
                                 /(2*(X_diff_x.shape[0])*(X_diff_y.shape[1]))
             r2[t_i, d0_i] = (XU_sum + YV_sum) \
                                 /((X_diff_x.shape[0])*(X_diff_y.shape[1]))
-
         
         if t_i == 0 or t_i == 125 or t_i == 250 or t_i == 375 or t_i == 500:
             compute_Q_criterion_2D(U[t_i], V[t_i], mesh_X, mesh_Y, t[t_i])
@@ -139,7 +145,6 @@ def Trajectories():
         image = imageio.imread(file)
         gif_images.append(image)
     imageio.mimsave('Figures/DG/DoubleGyres.gif', gif_images, loop=0, duration=5)
-
 
     plt.figure()
     plt.plot(t[:-1], Tr_A2[:-1], 'b', linewidth=0.5)
@@ -213,13 +218,7 @@ def Trajectories():
     plt.tight_layout()
     # plt.show()
     plt.savefig('Figures/Tr vs rate.png')
-
-
     
-    
-
-    
-
 if __name__ == '__main__':
     mesh_X, mesh_Y = meshing()
     # DoubleGyres(X, Y, 0)
